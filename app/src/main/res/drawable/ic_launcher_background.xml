@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Monityx adaptive icon – background layer.
+    108 × 108 dp canvas (Android adaptive icon spec).
+    Deep violet-to-indigo gradient with a subtle radial glow.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- ── Base gradient fill ──────────────────────────────────────────── -->
+    <path android:pathData="M0,0 h108 v108 h-108 z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="0"
+                android:startY="108"
+                android:endX="108"
+                android:endY="0">
+                <item android:offset="0.00" android:color="#FF0D0040" />
+                <item android:offset="0.45" android:color="#FF3B0F9E" />
+                <item android:offset="1.00" android:color="#FF6742E4" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- ── Upper-right radial glow (soft highlight) ────────────────────── -->
+    <path android:pathData="M108,0 m-44,0 a44,44 0 1,0 44,44 a44,44 0 1,0 -44,-44 z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="radial"
+                android:centerX="90"
+                android:centerY="18"
+                android:gradientRadius="46">
+                <item android:offset="0.00" android:color="#409070FF" />
+                <item android:offset="1.00" android:color="#00000000" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- ── Lower-left secondary glow ──────────────────────────────────── -->
+    <path android:pathData="M0,108 m0,-50 a50,50 0 1,0 50,50 a50,50 0 1,0 -50,-50 z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="radial"
+                android:centerX="18"
+                android:centerY="90"
+                android:gradientRadius="50">
+                <item android:offset="0.00" android:color="#304F27C0" />
+                <item android:offset="1.00" android:color="#00000000" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- ── Tiny sparkle dots for premium feel ─────────────────────────── -->
+    <path
+        android:fillColor="#30FFFFFF"
+        android:pathData="M82,14 m-2.5,0 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0 z" />
+    <path
+        android:fillColor="#18FFFFFF"
+        android:pathData="M94,28 m-1.5,0 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0 z" />
+    <path
+        android:fillColor="#18FFFFFF"
+        android:pathData="M14,72 m-1.5,0 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0 z" />
+    <path
+        android:fillColor="#10FFFFFF"
+        android:pathData="M26,92 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0 z" />
+
+</vector>

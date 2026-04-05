@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Monityx adaptive icon – foreground layer.
+    Viewport 108 × 108 dp. Safe zone: 18 dp inset on every side (72 × 72 safe).
+
+    Design: white credit card with a bold "M" monogram + card chip + three
+    subscription-item rows + a rising sparkline — all in the app's purple palette.
+    Works as a monochrome / themed icon silhouette on Android 13+.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         Card drop-shadow (offset 2 dp down, very dark, low alpha)
+         ───────────────────────────────────────────────────────────────── -->
+    <path
+        android:fillColor="#28000000"
+        android:pathData="
+            M22,32
+            C22,27.03 26.03,23 31,23
+            L77,23
+            C81.97,23 86,27.03 86,32
+            L86,82
+            C86,86.97 81.97,91 77,91
+            L31,91
+            C26.03,91 22,86.97 22,82
+            Z" />
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         White card body
+         ───────────────────────────────────────────────────────────────── -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="
+            M20,30
+            C20,25.03 24.03,21 29,21
+            L79,21
+            C83.97,21 88,25.03 88,30
+            L88,80
+            C88,84.97 83.97,89 79,89
+            L29,89
+            C24.03,89 20,84.97 20,80
+            Z" />
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         Top accent band (purple) — like a card header stripe
+         ───────────────────────────────────────────────────────────────── -->
+    <path android:pathData="
+            M20,30
+            C20,25.03 24.03,21 29,21
+            L79,21
+            C83.97,21 88,25.03 88,30
+            L88,44
+            L20,44
+            Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="20" android:startY="21"
+                android:endX="88"  android:endY="44">
+                <item android:offset="0.0" android:color="#FF6742E4" />
+                <item android:offset="1.0" android:color="#FF4F27C0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         Bold "M" monogram, white, inside the purple band (y 24–41)
+         Path: two vertical legs + two diagonals meeting at centre bottom.
+         Centred at x=54, spanning x 35–73, y 25–41.
+         ───────────────────────────────────────────────────────────────── -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="
+            M35,41
+            L35,25
+            L54,38
+            L73,25
+            L73,41
+            L67,41
+            L67,31
+            L57,38
+            L51,38
+            L41,31
+            L41,41
+            Z" />
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         SIM-style chip (gold-tinted, sits below the band on the left)
+         ───────────────────────────────────────────────────────────────── -->
+    <path
+        android:fillColor="#FFFFDF99"
+        android:pathData="
+            M27,48
+            C27,46.34 28.34,45 30,45
+            L42,45
+            C43.66,45 45,46.34 45,48
+            L45,57
+            C45,58.66 43.66,60 42,60
+            L30,60
+            C28.34,60 27,58.66 27,57
+            Z" />
+    <!-- Chip contact lines -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#D4B44A"
+        android:strokeWidth="1.2"
+        android:pathData="M30,50 L42,50" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#D4B44A"
+        android:strokeWidth="1.2"
+        android:pathData="M30,53 L42,53" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#D4B44A"
+        android:strokeWidth="1.2"
+        android:pathData="M36,45 L36,60" />
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         Subscription rows (3 items: icon pill + label pill + price chip)
+         ───────────────────────────────────────────────────────────────── -->
+
+    <!-- Row 1 -->
+    <path
+        android:fillColor="#FFE9E1FF"
+        android:pathData="M49,46 C49,44.9 49.9,44 51,44 L82,44 C83.1,44 84,44.9 84,46 L84,51 C84,52.1 83.1,53 82,53 L51,53 C49.9,53 49,52.1 49,51 Z" />
+    <path
+        android:fillColor="#FF6742E4"
+        android:pathData="M49,46 C49,44.9 49.9,44 51,44 L60,44 L60,53 L51,53 C49.9,53 49,52.1 49,51 Z" />
+    <path
+        android:fillColor="#FF6742E4"
+        android:pathData="M76,46 C76,44.9 76.9,44 78,44 L82,44 C83.1,44 84,44.9 84,46 L84,51 C84,52.1 83.1,53 82,53 L78,53 C76.9,53 76,52.1 76,51 Z" />
+
+    <!-- Row 2 -->
+    <path
+        android:fillColor="#FFE9E1FF"
+        android:pathData="M49,57 C49,55.9 49.9,55 51,55 L80,55 C81.1,55 82,55.9 82,57 L82,62 C82,63.1 81.1,64 80,64 L51,64 C49.9,64 49,63.1 49,62 Z" />
+    <path
+        android:fillColor="#FF8266E8"
+        android:pathData="M49,57 C49,55.9 49.9,55 51,55 L60,55 L60,64 L51,64 C49.9,64 49,63.1 49,62 Z" />
+    <path
+        android:fillColor="#FF8266E8"
+        android:pathData="M74,57 C74,55.9 74.9,55 76,55 L80,55 C81.1,55 82,55.9 82,57 L82,62 C82,63.1 81.1,64 80,64 L76,64 C74.9,64 74,63.1 74,62 Z" />
+
+    <!-- Row 3 -->
+    <path
+        android:fillColor="#FFE9E1FF"
+        android:pathData="M49,68 C49,66.9 49.9,66 51,66 L74,66 C75.1,66 76,66.9 76,68 L76,73 C76,74.1 75.1,75 74,75 L51,75 C49.9,75 49,74.1 49,73 Z" />
+    <path
+        android:fillColor="#FF9C87EE"
+        android:pathData="M49,68 C49,66.9 49.9,66 51,66 L60,66 L60,75 L51,75 C49.9,75 49,74.1 49,73 Z" />
+    <path
+        android:fillColor="#FF9C87EE"
+        android:pathData="M68,68 C68,66.9 68.9,66 70,66 L74,66 C75.1,66 76,66.9 76,68 L76,73 C76,74.1 75.1,75 74,75 L70,75 C68.9,75 68,74.1 68,73 Z" />
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         Rising sparkline in the lower-right area of the card
+         (represents spending trend / analytics)
+         ───────────────────────────────────────────────────────────────── -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF6742E4"
+        android:strokeWidth="2.2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M27,80 L35,74 L44,77 L53,70 L62,72 L70,66 L78,62" />
+
+    <!-- Arrow head at the end of the trend line -->
+    <path
+        android:fillColor="#FF6742E4"
+        android:pathData="M76,59 L82,62 L76,65 Z" />
+
+    <!-- Small data-point circles on the sparkline -->
+    <path android:fillColor="#FF6742E4" android:pathData="M35,74 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0 z" />
+    <path android:fillColor="#FF6742E4" android:pathData="M53,70 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0 z" />
+    <path android:fillColor="#FF6742E4" android:pathData="M70,66 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0 z" />
+
+</vector>

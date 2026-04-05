@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Cloud backup rules.
+    We backup preferences and the Room database so users keep their data on device change.
+    No sensitive personal data leaves the device without the user's explicit consent.
+-->
+<full-backup-content>
+    <include domain="database" path="subscription_manager.db" />
+    <include domain="sharedpref" path="." />
+    <exclude domain="sharedpref" path="com.bansalcoders.monityx.encrypted_prefs.xml" />
+</full-backup-content>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Monityx – monochrome icon (Android 13+ themed icons).
+    Single-colour silhouette used when the system applies a tint.
+    Same card + M mark concept, rendered as a clean flat shape.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Card silhouette -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="
+            M20,30
+            C20,25.03 24.03,21 29,21
+            L79,21
+            C83.97,21 88,25.03 88,30
+            L88,80
+            C88,84.97 83.97,89 79,89
+            L29,89
+            C24.03,89 20,84.97 20,80
+            Z" />
+
+    <!-- M cutout (rendered dark so it punches through on themed icons) -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="
+            M35,41
+            L35,25
+            L54,38
+            L73,25
+            L73,41
+            L67,41
+            L67,31
+            L57,38
+            L51,38
+            L41,31
+            L41,41
+            Z" />
+
+    <!-- Three subscription-row pills -->
+    <path android:fillColor="#CC000000" android:pathData="M49,44 h35 v9 h-35 z" />
+    <path android:fillColor="#99000000" android:pathData="M49,55 h33 v9 h-33 z" />
+    <path android:fillColor="#66000000" android:pathData="M49,66 h27 v9 h-27 z" />
+
+    <!-- Rising trend line -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF000000"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M27,80 L35,74 L44,77 L53,70 L62,72 L70,66 L78,62" />
+    <path android:fillColor="#FF000000" android:pathData="M76,59 L82,62 L76,65 Z" />
+
+</vector>

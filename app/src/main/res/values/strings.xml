@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Monityx</string>
+
+    <!-- Navigation -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_subscriptions">Subscriptions</string>
+    <string name="nav_analytics">Analytics</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Dashboard -->
+    <string name="monthly_spend">Monthly Spend</string>
+    <string name="yearly_spend">Yearly Spend</string>
+    <string name="active_subscriptions">Active Subscriptions</string>
+    <string name="upcoming_payments">Upcoming Payments</string>
+    <string name="no_subscriptions">No subscriptions yet</string>
+    <string name="add_first_subscription">Add your first subscription</string>
+
+    <!-- Subscriptions -->
+    <string name="add_subscription">Add Subscription</string>
+    <string name="edit_subscription">Edit Subscription</string>
+    <string name="subscription_name">Name</string>
+    <string name="subscription_cost">Cost</string>
+    <string name="subscription_currency">Currency</string>
+    <string name="billing_cycle">Billing Cycle</string>
+    <string name="start_date">Start Date</string>
+    <string name="next_billing_date">Next Billing Date</string>
+    <string name="category">Category</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="search_subscriptions">Search subscriptions…</string>
+    <string name="confirm_delete">Delete subscription?</string>
+    <string name="confirm_delete_message">This action cannot be undone.</string>
+
+    <!-- Analytics -->
+    <string name="spending_trend">Spending Trend</string>
+    <string name="category_breakdown">Category Breakdown</string>
+    <string name="no_data">No data available</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="base_currency">Base Currency</string>
+    <string name="theme">Theme</string>
+    <string name="notifications">Notifications</string>
+    <string name="export_data">Export Data</string>
+    <string name="export_csv">Export as CSV</string>
+    <string name="export_pdf">Export as PDF</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <!-- Billing cycles -->
+    <string name="cycle_weekly">Weekly</string>
+    <string name="cycle_monthly">Monthly</string>
+    <string name="cycle_yearly">Yearly</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">Billing Reminders</string>
+    <string name="notification_channel_description">Reminds you about upcoming subscription renewals</string>
+
+    <!-- Errors -->
+    <string name="error_invalid_cost">Please enter a valid amount</string>
+    <string name="error_name_required">Name is required</string>
+    <string name="error_generic">Something went wrong. Please try again.</string>
+
+    <!-- Export -->
+    <string name="export_success">Data exported successfully</string>
+    <string name="export_error">Export failed. Please try again.</string>
+</resources>
