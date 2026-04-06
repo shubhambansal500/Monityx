@@ -438,7 +438,7 @@ fun PrivacyPolicyScreen(onNavigateBack: () -> Unit) {
                 "The app optionally accesses the internet only to refresh currency exchange rates from the open.er-api.com free tier. No personal or subscription data is included in these requests."
             }
             PrivacySection("Permissions") {
-                "The app requests only: POST_NOTIFICATIONS (for billing reminders, Android 13+), INTERNET (optional currency refresh), SCHEDULE_EXACT_ALARM (precise notifications). No contacts, location, camera, microphone, or storage permissions are requested."
+                "The app requests only: POST_NOTIFICATIONS (for billing reminders, Android 13+), INTERNET (optional currency refresh), ACCESS_NETWORK_STATE (connectivity check). Billing reminders use WorkManager — no exact alarm permissions are required. No contacts, location, camera, microphone, or storage permissions are requested."
             }
             PrivacySection("Contact") {
                 "If you have privacy questions, please open an issue on our GitHub repository."

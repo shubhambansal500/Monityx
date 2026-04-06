@@ -51,9 +51,13 @@
   <ul>
     <li><strong>POST_NOTIFICATIONS</strong> – for billing reminders on Android 13 and above.</li>
     <li><strong>INTERNET</strong> – optional currency exchange rate refresh.</li>
-    <li><strong>SCHEDULE_EXACT_ALARM / USE_EXACT_ALARM</strong> – precise reminder notifications.</li>
     <li><strong>ACCESS_NETWORK_STATE</strong> – to check connectivity before making network requests.</li>
   </ul>
+  <p>
+    <strong>Exact alarm permissions are not used.</strong> Billing reminders are scheduled
+    via Android WorkManager (inexact, battery-friendly) — no <code>SCHEDULE_EXACT_ALARM</code>
+    or <code>USE_EXACT_ALARM</code> permission is declared or requested.
+  </p>
   <p>
     No contacts, location, camera, microphone, or storage permissions are requested.
   </p>
